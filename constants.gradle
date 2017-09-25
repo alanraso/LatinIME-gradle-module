@@ -1,0 +1,13 @@
+allprojects {
+  project.ext {
+    androidBuildTools = '25.0.3'
+
+    sdkTargetVersion = 25
+    sdkCompileVersion = 25
+    sdkMinimumVersion = 19
+
+    supportLibVersion = '25.4.0'
+    espressoVersion = '2.2.2'
+    junitVersion = '4.12'
+  }
+}
