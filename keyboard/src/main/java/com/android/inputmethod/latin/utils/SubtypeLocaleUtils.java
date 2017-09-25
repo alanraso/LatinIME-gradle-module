@@ -181,8 +181,10 @@ public final class SubtypeLocaleUtils {
       // No language subtype should be displayed in system locale.
       return sResources.getString(R.string.subtype_no_language);
     }
+
     final Integer exceptionalNameResId = sExceptionalLocaleToNameIdsMap.get(localeString);
     final String displayName;
+
     if (exceptionalNameResId != null && exceptionalNameResId != 0) {
       final RunInLocale<String> getExceptionalName = new RunInLocale<String>() {
         @Override

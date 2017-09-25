@@ -81,3 +81,5 @@ dependencies {
   compile "com.android.support:support-v4:$supportLibVersion"
   compile "com.android.support:appcompat-v7:$supportLibVersion"
 }
+
+apply from: "$rootProject.projectDir/install_bintray_upload.gradle"
