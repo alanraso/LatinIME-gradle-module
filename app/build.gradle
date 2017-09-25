@@ -5,7 +5,8 @@ android {
   buildToolsVersion androidBuildTools
 
   defaultConfig {
-    applicationId "com.hrupin.samplekeyboard"
+    applicationId libGroupId
+    applicationIdSuffix ".app"
     minSdkVersion sdkMinimumVersion
     targetSdkVersion sdkTargetVersion
     versionCode 1
@@ -31,7 +32,7 @@ android {
 }
 
 dependencies {
-  compile project(':keyboard')
+  implementation project(':keyboard')
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
   androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVersion", {
