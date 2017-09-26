@@ -6,6 +6,11 @@ allprojects {
     sdkCompileVersion = 25
     sdkMinimumVersion = 19
 
+    libRepo = 'android-keyboard'
+    libVersion = '1.0.0-alpha.2'
+    libGroupId = 'br.com.taqtile.android.keyboard'
+    libGitUrl = 'https://github.com/alanraso/LatinIME-gradle-module'
+
     supportLibVersion = '25.4.0'
     espressoVersion = '2.2.2'
     junitVersion = '4.12'
